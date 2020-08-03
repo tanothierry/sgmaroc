@@ -130,7 +130,7 @@ body{
     position: absolute;
     top: 100%;
     z-index: 1000;
-    min-width: 180px;
+    min-width: 200px;
     margin: 2px 0 0;
     list-style: none;
     font-size: 14px;
@@ -152,10 +152,12 @@ body{
 
 .navbar-nav .dropdown li a{
     color: rgb(71, 71, 71)!important;
+    text-transform: lowercase;
 }
 
 .navbar-nav .dropdown li:hover a{
     color: #e2001a!important;
+    text-decoration: none;
 }
 
 .navbar-nav .dropdown li{
@@ -179,11 +181,31 @@ body{
 .navbar-nav:hover .dropdown li:nth-child(3) {
     animation: animate 600ms ease-in-out;
 }
+
+.navbar-nav:hover .dropdown li:nth-child(4) {
+    animation: animate 750ms ease-in-out;
+}
+
+.navbar-nav:hover .dropdown li:nth-child(5) {
+    animation: animate 900ms ease-in-out;
+}
+.navbar-nav:hover .dropdown li:nth-child(6) {
+    animation: animate 1150ms ease-in-out;
+}
+
+.navbar-nav:hover .dropdown li:nth-child(7) {
+    animation: animate 1300ms ease-in-out;
+}
+
   
  @keyframes animate {
 0% {
     opacity: 0;
     transform: scale(0.3) translateY(-60px);
+}
+
+40% {
+    transform: scale(1.1) translateY(30px);
 }
 
 80% {
@@ -298,9 +320,9 @@ text-decoration: none;
     margin-bottom: 1rem;
 }
 
-a:hover{
+/* a:hover{
     text-decoration: none;
-}
+} */
 
 .card-partone-rigth{
     height: 74px;
@@ -402,6 +424,114 @@ a:hover{
     width: 100%;
     background-color: rgba(27,51,73,0.5);
 }
+
+.footer{
+    background-color: #2a2a2a;
+    padding: 4.5rem 6rem;
+    color: #fff;
+    margin-top: 40px;
+    font-family: "Helvetica Neue",Helvetica,arial,sans-serif;
+}
+
+.footer-link{
+    margin-bottom: 3rem;
+}
+
+.footer-link ul{
+    flex: 1;
+    margin-right: 3rem;
+}
+
+.footer-link ul h5{
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.footer-link ul li{
+    list-style: none;
+    margin: .4rem;
+}
+
+.footer-link ul li::before{
+    content: ">";
+    margin-right: 5px;
+    font-size: 9px;
+}
+
+.footer-link ul li a{
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-link ul li a:hover{
+    color: #919090;
+    transition: all .3s;
+}
+.footer-social{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: .6rem;
+    margin-right: 1rem;
+}
+
+
+
+.facebook{
+    background-color: #3b5998;
+}
+
+.linkedin{
+    background-color: #007bb6;
+}
+
+.twitter{
+    background-color: #00aced;
+}
+
+.youtube{
+    background-color: #b00;
+}
+
+.footer-logo img{
+    margin-left: 0;
+    margin-top: 1px;
+    width: 189px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.footer-bottom{
+    align-items: center;
+}
+
+.footer-bottom li {
+    border-right: 1px solid white;
+    list-style: none;
+}
+
+.footer-bottom li a{
+    padding: 1.8rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.footer-bottom li a:hover{
+    color: #e2001a!important;
+    transition: all .3s;
+}
+
+.signature{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
 
 
 
