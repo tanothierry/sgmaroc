@@ -529,6 +529,108 @@ text-decoration: none;
     right: 0;
 }
 
+.main-content-connexion{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/bg-01.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.connexion-logo{
+    justify-content: center;
+    display: flex ;
+    margin-bottom: -1.8rem;
+    z-index: -1;
+}
+
+.block-content{
+    width: 30%;
+    min-height: 30rem;
+    margin: -10rem auto 0;
+}
+
+.form-connexion{
+    position: absolute;
+    width: 30%;
+}
+
+.form-connexion div,
+.button-connexion{
+    height: 7.2rem;
+    background-color: rgba(255, 255, 255, 0.747);
+    width: 100%;
+    border-radius: 50rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.form-connexion div input{
+    background-color: transparent;
+    width: 100%;
+    height: 3.2rem;
+    border: none;
+    border-bottom: 1px solid #acacac;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-connexion div input:focus{
+    outline: none;
+}
+
+.button-connexion{
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white!important;
+    background-color: #ed3b45!important;
+    justify-content: center;
+    margin-bottom: 1rem!important;
+    margin-top: 3rem!important;
+}
+
+.button-connexion:hover{
+    background-color: #c9343b!important;
+    transition: all .3s;
+}
+
+.button-connexion a{
+    color: white!important;
+    font-weight: bold;
+
+}
+
+.button-connexion a:hover{
+    text-decoration: none;
+}
+
+.button-inscription{
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: #ffffff!important;
+    justify-content: center;
+    margin-top: 0rem!important;
+}
+
+.button-inscription a{
+    color: #ed3b45!important;
+    font-weight: bold;
+
+}
+
+.button-inscription a:hover{
+    text-decoration: none;
+}
+
 
 
 
