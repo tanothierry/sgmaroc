@@ -12,6 +12,71 @@
 <body>
     
     <div class="main-content-connexion">
+        <div class="menu-wrapper">
+            <button class="menu-btn" has-ripple="true">
+              <i></i>
+              <i></i>
+              <i></i>
+              <span class="ripple"></span>
+            </button>
+            <ul class="menu">
+              <li class="menuitem-wrapper">
+                <div class="icon-holder">
+                  <a href="#" class="menu-item">
+                      <i class="material-icons">home</i>
+                  </a>
+                </div>
+                <svg class="circle-holder">
+                  <circle r="88" cx="50%" cy="50%" fill="none">
+                  </circle>
+                </svg>
+              </li>
+              <li class="menuitem-wrapper">
+                <div class="icon-holder">
+                  <a href="#" class="menu-item">
+                      <i class="material-icons">face</i>
+                  </a>
+                </div>
+                <svg class="circle-holder">
+                  <circle r="88" cx="50%" cy="50%" fill="none">
+                  </circle>
+                </svg>
+              </li>
+              <li class="menuitem-wrapper">
+                <div class="icon-holder">
+                  <a href="#" class="menu-item">
+                      <i class="material-icons">android</i>
+                  </a>
+                </div>
+                <svg class="circle-holder">
+                  <circle r="88" cx="50%" cy="50%" fill="none">
+                  </circle>
+                </svg>
+              </li>
+              <li class="menuitem-wrapper">
+                <div class="icon-holder">
+                  <a href="#" class="menu-item">
+                      <i class="material-icons">shopping_cart</i>
+                  </a>
+                </div>
+                <svg class="circle-holder">
+                  <circle r="88" cx="50%" cy="50%" fill="none">
+                  </circle>
+                </svg>
+              </li>
+              <li class="menuitem-wrapper">
+                <div class="icon-holder">
+                  <a href="#" class="menu-item">
+                      <i class="material-icons">room</i>
+                  </a>
+                </div>
+                <svg class="circle-holder">
+                  <circle r="88" cx="50%" cy="50%" fill="none">
+                  </circle>
+                </svg>
+              </li>
+            </ul>
+        </div>
         <div class="block-content">
             <div class="connexion-logo">
                 <img src="img/logo-sg.png" alt="" class="img-fluid">
@@ -37,5 +102,29 @@
     <!-- Mes script -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $('[has-ripple="true"]').click(function () {
+            $(this).toggleClass('clicked');
+            $('.menu').toggleClass('open');
+          });
+          
+          $('.menu a').each(function (index) {
+            var thismenuItem        = $(this);
+            
+            thismenuItem.click(function (event) {
+              event.preventDefault();
+              
+              $('.menuitem-wrapper').eq(index).addClass('spin');
+              
+              var timer = setTimeout(function () {
+                $('body').removeAttr('class').addClass('bg-'+index);
+                $('.menuitem-wrapper').eq(index).removeClass('spin');
+                $('.menu').removeClass('open');
+                $('.menu-btn').removeClass('clicked');
+              }, 800);
+            });
+          });
+    </script>
 </body>
 </html>
